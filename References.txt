@@ -1,5 +1,4 @@
 Images:
-
 http://www.istockphoto.com/photo/old-stained-paper-texture-gm523766804-92043423?esource=SEO_GIS_CDN_Redirect
 https://www.vecteezy.com/vector-art/101577-free-roman-pillar-logo-design-vector
 https://garfield.com/lasagna
@@ -7,7 +6,6 @@ https://wallpapersafari.com/papyrus-wallpaper/
 http://assets.epicurious.com/photos/55f72d733c346243461d496e/2:1/w_1260%2Ch_630/09112015_15minute_pastasauce_tomato.jpg
 
 Fonts:
-
 https://fonts2u.com/empiric-roman.font
 https://www.fontsquirrel.com/fonts/latin-modern-roman
 
