@@ -15,7 +15,7 @@
 
 /*Propiedades de estilo básicas del documento html*/
 html{
-    background-image: url(../Images/papyrus.png); /*Imágen de fondo*/
+    background-image: url(../Images/dark_wood_wallpaper.jpg); /*Imágen de fondo*/
     background-size: cover; /*La imágen de fondo cubre toda la página*/
     background-repeat: no-repeat; /*La imágen de fondo no se repite*/
     background-attachment: fixed; /*La imagen de fondo está fijada (no se mueve con el scroll)*/
@@ -35,16 +35,16 @@ p{
     font-family: 'LatinText'; /*Fuente a usar (de las declaradas al principio)*/
     text-align: justify ; /*Se justifica el texto*/
     font-size: 20px;
-    color: #333333;
+    /*text-shadow: 1px 1px #DDDDDD;*/
+    color: #DDDDDD;
 }
 
 /*Propiedades básicas de estilo para la etiqueta de texto H1*/
 h1{
 	font-size: 50px;/*Tamaño de la fuente*/
-    color: #a12d2d; /*Color de fuente*/
+    color: #DDDDDD; /*Color de fuente*/
 	text-align: center; /*Alineación del texto*/
     font-family: 'LatinText'; /*Fuente a usar*/
-
 }
 
 /*Propiedades básicas de estilo para la imágen principal*/
@@ -52,6 +52,7 @@ h1{
     text-align: center;/*Alineada al centro*/
     margin: auto;/*Margen automática */
     width: 60%;/*Ocupa 60% del total de espacio de la página (horizontalmente)*/
+    content: url("../Images/icon_light.png"); /*Por defecto el ícono es el claro*/
 }
 
 /*Propiedades del logo cuando el cursor está encima*/
@@ -62,7 +63,8 @@ h1{
 .cornerLogo{
     text-align: left;/*Alineada a la izquierda*/
     margin-left: 5%;/*Margen automática */
-    width: 40%;/*Ocupa 30% del total de espacio de la página (horizontalmente)*/
+    width: 30%;/*Ocupa 30% del total de espacio de la página (horizontalmente)*/
+    content: url("../Images/icon_light.png"); /*Por defecto el ícono es el claro*/
 }
 
 /*Propiedades del logo cuando el cursor está encima*/
@@ -75,4 +77,29 @@ h1{
     text-align: center;/*Alineada al centro*/
     margin: auto;/*Margen automática */
     width: 60%;/*Ocupa 60% del total de espacio de la página (horizontalmente)*/
+}
+
+/*@media para cuando el navegador tiene un tamaño (horizontal) menor a 925 pixeles, punto en el cual titulos de la barra de navegación dejan de funcionar completamente*/
+@media (max-width: 720px){
+    html{
+        background-image: url(../Images/light_wood_wallpaper.jpg); /*Imágen de fondo*/
+    }
+
+    p{
+        color: #333333;
+    }
+
+    h1{
+        color: #a12d2d;
+    }
+
+    .principalLogo{
+        content: url("../Images/icon_dark.png"); /*Cambia el ícono al oscuro*/
+    }
+
+    .cornerLogo{
+        content: url("../Images/icon_dark.png"); /*Cambia el ícono al oscuro*/
+        text-align: center; /*Alineada al centro*/
+        margin: auto;
+    }
 }
