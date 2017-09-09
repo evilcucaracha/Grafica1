@@ -99,6 +99,10 @@ header{
     border-bottom: solid #333333;
 }
 
+.icon-menu{
+  color: #a12d2d;
+}
+
 .icon{
     float: left;
     content: url("../Images/icon_dark.png");
@@ -107,8 +111,9 @@ header{
 }
 
 .container{
-    width: 97%;
+    width: 780px;
     margin: auto;
+    align-content: center;
 }
 
 #menu-bar{
@@ -121,19 +126,19 @@ header{
   left: 0;
   width: 100%;
   height: 100vh;
-  background: rgba(105, 49, 18, 0.5);
+  background: rgba(161, 41, 41, 1);
   transition: all 0.3s;
   transform: translateX(100%);
 }
 
 .menu a{
   display: block;
-  color: #fff;
+  color: #dddddd;
   height: 50px;
   text-decoration: none;
   padding: 15px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  text-align: center;
+  text-align: left;
 }
 
 .menu a:hover{
@@ -141,7 +146,7 @@ header{
 }
 
 #menu-bar:checked ~ .menu{
-  transform: translate(0%);
+  transform: translate(70%);
 }
 
 header label{
@@ -169,7 +174,7 @@ section{
 }
 
 #welcome{
-  text-align: center;
+  text-align: justify;
 }
 
 p{
@@ -214,14 +219,13 @@ h2{
 
 #welcome-images img{
   width: 100%;
-  max-width: 300px;
+  max-width: 230px;
+  border: 5px solid #dddddd;
 }
 
-/*Propiedades básicas de estilo para la imágen principal*/
-.principalImage{
-    text-align: center;/*Alineada al centro*/
-    margin: auto;/*Margen automática */
-    width: 60%;/*Ocupa 60% del total de espacio de la página (horizontalmente)*/
+footer{
+  text-align: center;
+  color: #333333;
 }
 
 /*@media para cuando el navegador tiene un tamaño (horizontal) menor a 925 pixeles, punto en el cual titulos de la barra de navegación dejan de funcionar completamente*/
@@ -239,6 +243,10 @@ h2{
         content: url("../Images/icon_light.png");
     }
 
+    .icon-menu{
+      color: #dddddd;
+    }
+
     #welcome{
       text-align: justify;
       margin-left: 5px;
@@ -247,16 +255,25 @@ h2{
 
     p{
         color: #dddddd;
-        font-size: 15px;
+        font-size: 18px;
     }
 
     h2{
         color: #dddddd;
-        font-size: 25px;
+        font-size: 35px;
     }
 
     h4{
       color: #dddddd
+    }
+
+    h5{
+      color: #dddddd;
+    }
+
+    .container{
+      width: 98%;
+      margin-right: 10px;
     }
 
     .principalLogo{
@@ -268,4 +285,30 @@ h2{
         text-align: center; /*Alineada al centro*/
         margin: auto;
     }
+}
+
+@media (max-width: 480px) {
+  .menu{
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  .menu a{
+    text-align: center;
+  }
+
+  #menu-bar:checked ~ .menu{
+    transform: translate(0%);
+  }
+
+  p{
+      font-size: 15px;
+  }
+
+  h2{
+      font-size: 25px;
+  }
+
+  h5{
+    font-size: 10px;
+  }
 }
