@@ -1,30 +1,166 @@
 @charset "UTF-8";
 
+/*SE AÑADEN LOS ICONOS DE FONTELLO*/
+/*Fontello: Inicio*/
+@font-face {
+  font-family: 'fontello';
+  src: url('../Fonts/Fontello/fontello.eot?46952357');
+  src: url('../Fonts/Fontello/fontello.eot?46952357#iefix') format('embedded-opentype'),
+       url('../Fonts/Fontello/fontello.woff2?46952357') format('woff2'),
+       url('../Fonts/Fontello/fontello.woff?46952357') format('woff'),
+       url('../Fonts/Fontello/fontello.ttf?46952357') format('truetype'),
+       url('../Fonts/Fontello/fontello.svg?46952357#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?46952357#fontello') format('svg');
+  }
+}
+*/
+
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-menu:before { content: '\f0c9'; } /* '' */
+/*Fontello: Final*/
+
+
+
+
 /*Se añaden las fuentes externas*/
 @font-face {
     /*font-family da el nombre para "llamar" la fuente, y src define el origen*/
 	font-family: 'LatinText'; src: url(../Fonts/lmromandunh10-regular.otf);
 }
 
-@font-face {
-    /*font-family da el nombre para "llamar" la fuente, y src define el origen*/
-	font-family: 'LatinTitle'; src: url(../Fonts/EMPORO.ttf);
-    format('truetype');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-
 
 /*Propiedades de estilo básicas del documento html*/
 html{
-    background-image: url(../Images/dark_wood_wallpaper.jpg); /*Imágen de fondo*/
-    background-size: cover; /*La imágen de fondo cubre toda la página*/
-    background-repeat: no-repeat; /*La imágen de fondo no se repite*/
-    background-attachment: fixed; /*La imagen de fondo está fijada (no se mueve con el scroll)*/
-    width: 100%; /*Se ocupa toda la página (horizontalmente)*/
-    height: 100%; /*Se ocupa toda la página*/
+    background-color: #e0bb84;
 }
 
 body{
     margin: 0; /*El márgen es 0 (nada) para que la barra de navegación ocupe toda la página*/
+		font-family: 'LatinText';
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    background: #693112;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.icon{
+    float: left;
+}
+
+.container{
+    width: 97%;
+    margin: auto;
+}
+
+#menu-bar{
+    display: none;
+}
+
+.menu{
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(105, 49, 18, 0.5);
+  transition: all 0.3s;
+  transform: translateX(100%);
+}
+
+.menu a{
+  display: block;
+  color: #fff;
+  height: 50px;
+  text-decoration: none;
+  padding: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.menu a:hover{
+  background: rgba(200, 200, 200, 0.3);
+}
+
+#menu-bar:checked ~ .menu{
+  transform: translate(0%);
+}
+
+header label{
+    float: right;
+    font-size: 28px;
+    margin: -5px 0;
+    cursor: pointer;
+}
+
+header .container{
+  display: table;
+}
+
+section{
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+#banner{
+  margin-top: 50px;
+}
+
+#banner img{
+  width: 100%;
 }
 
 p{
@@ -36,23 +172,25 @@ p{
     text-align: justify ; /*Se justifica el texto*/
     font-size: 20px;
     /*text-shadow: 1px 1px #DDDDDD;*/
-    color: #DDDDDD;
+    color: #333333;
 }
 
 /*Propiedades básicas de estilo para la etiqueta de texto H1*/
 h1{
-	font-size: 50px;/*Tamaño de la fuente*/
+	   font-size: 50px;/*Tamaño de la fuente*/
     color: #DDDDDD; /*Color de fuente*/
 	text-align: center; /*Alineación del texto*/
     font-family: 'LatinText'; /*Fuente a usar*/
 }
+
+
 
 /*Propiedades básicas de estilo para la imágen principal*/
 .principalLogo{
     text-align: center;/*Alineada al centro*/
     margin: auto;/*Margen automática */
     width: 60%;/*Ocupa 60% del total de espacio de la página (horizontalmente)*/
-    content: url("../Images/icon_light.png"); /*Por defecto el ícono es el claro*/
+    content: url("../Images/icon_dark.png"); /*Por defecto el ícono es el claro*/
 }
 
 /*Propiedades del logo cuando el cursor está encima*/
@@ -82,11 +220,15 @@ h1{
 /*@media para cuando el navegador tiene un tamaño (horizontal) menor a 925 pixeles, punto en el cual titulos de la barra de navegación dejan de funcionar completamente*/
 @media (max-width: 720px){
     html{
-        background-image: url(../Images/light_wood_wallpaper.jpg); /*Imágen de fondo*/
+      background-color: #693112;
+    }
+
+    header{
+      background: #e0bb84;
     }
 
     p{
-        color: #333333;
+        color: #dddddd;
     }
 
     h1{
@@ -94,7 +236,7 @@ h1{
     }
 
     .principalLogo{
-        content: url("../Images/icon_dark.png"); /*Cambia el ícono al oscuro*/
+        content: url("../Images/icon_light.png"); /*Cambia el ícono al oscuro*/
     }
 
     .cornerLogo{
