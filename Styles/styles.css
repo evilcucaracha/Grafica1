@@ -100,6 +100,9 @@ header{
 
 .icon{
     float: left;
+    content: url("../Images/icon_light.png");
+    width: auto;
+    height: 50px;
 }
 
 .container{
@@ -129,6 +132,7 @@ header{
   text-decoration: none;
   padding: 15px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  text-align: center;
 }
 
 .menu a:hover{
@@ -163,13 +167,12 @@ section{
   width: 100%;
 }
 
+#welcome{
+  text-align: center;
+}
+
 p{
-    margin-left: 8%; /*8% de margen a izquierda y derecha*/
-    margin-right: 8%;
-    margin-top: 25px;/*25 pixeles de margen arriba y abajo*/
-    margin-bottom: 25px;
     font-family: 'LatinText'; /*Fuente a usar (de las declaradas al principio)*/
-    text-align: justify ; /*Se justifica el texto*/
     font-size: 20px;
     /*text-shadow: 1px 1px #DDDDDD;*/
     color: #333333;
@@ -177,9 +180,9 @@ p{
 
 /*Propiedades básicas de estilo para la etiqueta de texto H1*/
 h1{
-	   font-size: 50px;/*Tamaño de la fuente*/
-    color: #DDDDDD; /*Color de fuente*/
-	text-align: center; /*Alineación del texto*/
+	  font-size: 50px;/*Tamaño de la fuente*/
+    color: #a12d2d; /*Color de fuente*/
+    text-align: center; /*Alineación del texto*/
     font-family: 'LatinText'; /*Fuente a usar*/
 }
 
@@ -220,11 +223,15 @@ h1{
 /*@media para cuando el navegador tiene un tamaño (horizontal) menor a 925 pixeles, punto en el cual titulos de la barra de navegación dejan de funcionar completamente*/
 @media (max-width: 720px){
     html{
-      background-color: #693112;
+      background-color: #2a3d4b;
     }
 
     header{
-      background: #e0bb84;
+      background: #dddddd;
+    }
+
+    .icon{
+        content: url("../Images/icon_dark.png");
     }
 
     p{
@@ -232,7 +239,7 @@ h1{
     }
 
     h1{
-        color: #a12d2d;
+        color: #dddddd;
     }
 
     .principalLogo{
