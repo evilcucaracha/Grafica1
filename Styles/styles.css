@@ -184,7 +184,10 @@ p{
     color: #333333;
 }
 
-
+a{
+  color: #dddddd;
+  
+}
 
 /*Propiedades básicas de estilo para la etiqueta de texto H1*/
 h2{
@@ -211,6 +214,7 @@ h2{
 
 #welcome-images h4{
   color: #dddddd;
+  text-align: center;
 }
 
 #welcome-images article{
@@ -221,6 +225,69 @@ h2{
   width: 100%;
   max-width: 230px;
   border: 5px solid #dddddd;
+}
+
+#section1 article{
+  margin: 15px;
+}
+
+#section1 img{
+  width: 100%;
+  max-width: 360px;
+  border: 5px solid #dddddd;
+}
+
+#section1 .container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#section1 p{
+  width: 100%;
+  max-width: 360px;
+  text-align: justify;
+}
+
+#section1 h4{
+  text-align: center;
+}
+
+#section2{
+  background-image: url("../Images/dark_wood_wallpaper.jpg");
+  background-size: auto;
+}
+
+#section2 .container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#section2 h2{
+  color: #dddddd;
+}
+
+#section2 h4{
+  color: #dddddd;
+  text-align: center;
+}
+
+#section2 article{
+  margin: 15px;
+}
+
+#section2 img{
+  width: 100%;
+  max-width: 360px;
+  border: 5px solid #dddddd;
+}
+
+#section2 p{
+  width: 100%;
+  max-width: 360px;
+  text-align: justify;
+  color: #dddddd;
 }
 
 footer{
