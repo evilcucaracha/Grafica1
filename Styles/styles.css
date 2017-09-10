@@ -210,6 +210,12 @@ h4{
   font-size: 15px; /*Tamaño de la fuente en las etiquetas H4*/
 }
 
+/*Id de los elementos del mapa del sitio*/
+#submap{
+  margin-left: 50px; /*Crea una tabulación*/
+  text-align: left;
+}
+
 /*Sección de imágenes del index*/
 #welcome-images{
   background-image: url("../Images/dark_wood_wallpaper.jpg"); /*Establece la madera oscura como fondo de esa sección*/
