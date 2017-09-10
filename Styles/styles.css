@@ -99,6 +99,8 @@ header{
     border-bottom: solid #333333;
 }
 
+
+
 .icon-menu{
   color: #a12d2d;
 }
@@ -186,7 +188,7 @@ p{
 
 a{
   color: #dddddd;
-  
+
 }
 
 /*Propiedades básicas de estilo para la etiqueta de texto H1*/
@@ -290,6 +292,10 @@ h2{
   color: #dddddd;
 }
 
+#section1 a{
+  color: #333333;
+}
+
 footer{
   text-align: center;
   color: #333333;
@@ -351,6 +357,10 @@ footer{
         content: url("../Images/icon_dark.png"); /*Cambia el ícono al oscuro*/
         text-align: center; /*Alineada al centro*/
         margin: auto;
+    }
+
+    #section1 a{
+      color: #dddddd;
     }
 }
 
