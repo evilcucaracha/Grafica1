@@ -11,6 +11,7 @@ http://assets.kraftfoods.com/recipe_images/opendeploy/92161_640x428.jpg
 http://img.taste.com.au/ZfBKx8SH/taste/2016/11/beef-and-olive-spaghetti-bolognese-109377-1.jpeg
 http://image.wikifoundry.com/image/1/tNbFIS8l7DdM4jiaKnpaew55407/GW510H313
 http://www.italymagazine.com/sites/default/files/feature-story/leader/marco-polo.jpg
+https://pbs.twimg.com/media/DBUoxNFUAAAGcgq.jpg
 
 Fonts:
 https://fonts2u.com/empiric-roman.font
@@ -19,3 +20,4 @@ https://www.fontsquirrel.com/fonts/latin-modern-roman
 Info:
 https://garfield.com/lasagna
 https://es.wikipedia.org/wiki/Pasta
+https://www.kiwilimon.com/recetas/pastas/spaghetti
